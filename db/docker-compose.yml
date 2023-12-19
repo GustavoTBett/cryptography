@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  cryptography:
+    container_name: cryptography_container
+    image: postgres:16.1
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_PASSWORD: cryptography_pw
+      POSTGRES_USER: cryptography_user
+      POSTGRES_DB: cryptography_db
